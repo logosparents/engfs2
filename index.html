@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,10 +51,9 @@
 
   <!-- React JSX Script with Babel -->
   <script type="text/babel">
-    // Extract Hooks from global React object to prevent ReferenceError
     const { useState, useEffect } = React;
     
-    // Total 24 words vocabulary pool as requested
+    // Total 24 words vocabulary pool
     const FULL_VOCAB_POOL = [
       "happily", "kindly", "slowly", "coin", "necklace", "museum", 
       "sculpture", "competition", "goggles", "medal", "helmet", "towel", 
@@ -440,62 +440,61 @@
       }
     };
 
-    
-    // Custom inline SVGs for Lucide icons to guarantee offline reliability
+    // Inline SVGs for Lucide Icons
     const PrinterIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-printer"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
     );
 
     const BookOpenIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
     );
 
     const RefreshCwIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-refresh-cw"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
     );
 
     const Edit3Icon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-edit-3"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
     );
 
     const CheckCircleIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10-3-3"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10-3-3"/></svg>
     );
 
     const EyeIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0z"/><circle cx="12" cy="12" r="3"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0z"/><circle cx="12" cy="12" r="3"/></svg>
     );
 
     const EyeOffIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-off"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.574 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/><path d="M14.084 14.084a3 3 0 0 1-4.168-4.168"/><path d="M1.393 1.393l21.214 21.214"/><path d="M2.062 12.348a10.743 10.743 0 0 0 6.643 6.551"/><path d="M12 19a10.66 10.66 0 0 0 4.148-.848"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.574 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/><path d="M14.084 14.084a3 3 0 0 1-4.168-4.168"/><path d="M1.393 1.393l21.214 21.214"/><path d="M2.062 12.348a10.743 10.743 0 0 0 6.643 6.551"/><path d="M12 19a10.66 10.66 0 0 0 4.148-.848"/></svg>
     );
 
     const AwardIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-award"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
     );
 
     const SparklesIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-sparkles"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"/><path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5Z"/><path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"/><path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5Z"/><path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1Z"/></svg>
     );
 
     const SaveIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-save"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></svg>
     );
 
     const UndoIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-undo"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>
     );
 
     const AlertCircleIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-alert-circle"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
     );
 
     const HelpCircleIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-help-circle"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
     );
 
     const TypeIcon = () => (
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-type"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/></svg>
     );
 
     function App() {
@@ -504,10 +503,10 @@
       const [mode, setMode] = useState('teacher'); // 'teacher' or 'student'
       const [showAnswers, setShowAnswers] = useState(false);
       
-      // Font Size: 'standard' or 'large' (large is great for younger FS2 kids)
+      // Font Size: 'standard' or 'large'
       const [fontSize, setFontSize] = useState('large');
 
-      // Dynamic Word Box State for Part C (8 words: 6 answers + 2 random distractors)
+      // Dynamic Word Box State for Part C
       const [partCWords, setPartCWords] = useState([]);
 
       // Student inputs
@@ -519,7 +518,7 @@
       const [isEditing, setIsEditing] = useState(false);
       const [editableData, setEditableData] = useState(null);
 
-      // Helper helper to shuffle array
+      // Helper to shuffle array
       const shuffleArray = (arr) => {
         const copy = [...arr];
         for (let i = copy.length - 1; i > 0; i--) {
@@ -529,14 +528,14 @@
         return copy;
       };
 
-      // Whenever the active set changes, generate the dynamic 8 words for Part C
+      // Set load trigger
       useEffect(() => {
         const copy = JSON.parse(JSON.stringify(EXAM_SETS[currentSetKey]));
         setExamData(copy);
         setEditableData(copy);
         resetStudentState();
 
-        // Dynamically calculate the 8 words (6 answers + 2 random distractors from remaining 18)
+        // Dynamically calculate the 8 words (6 answers + 2 random distractors)
         const correctAnswers = Object.values(copy.partC.answers);
         const distractorsPool = FULL_VOCAB_POOL.filter(word => !correctAnswers.includes(word));
         const randomDistractors = shuffleArray(distractorsPool).slice(0, 2);
@@ -585,11 +584,22 @@
       const gradeExam = () => {
         let score = 0;
         
-        // Part A: 8 marks
+        // Part A: 8 marks (Supports both single & double blanks)
         examData.partA.questions.forEach(q => {
-          const studentAns = (studentAnswers[q.id] || "").trim().toLowerCase();
-          const correctAns = q.ans.toLowerCase();
-          if (studentAns === correctAns) score += 1;
+          const parts = q.text.split('__________');
+          if (parts.length <= 2) {
+            const studentAns = (studentAnswers[q.id] || "").trim().toLowerCase();
+            const correctAns = q.ans.toLowerCase();
+            if (studentAns === correctAns) score += 1;
+          } else {
+            // Multiple blanks (e.g., Q7)
+            const expectedAnswers = q.ans.split(', ');
+            const isAllCorrect = expectedAnswers.every((ans, idx) => {
+              const studAns = (studentAnswers[`${q.id}_${idx}`] || "").trim().toLowerCase();
+              return studAns === ans.toLowerCase();
+            });
+            if (isAllCorrect) score += 1;
+          }
         });
 
         // Part B: 6 marks
@@ -635,7 +645,6 @@
         window.print();
       };
 
-      // Class helper for responsive font sizing
       const getFontSizeClass = (element) => {
         if (fontSize === 'large') {
           if (element === 'question') return 'text-lg md:text-xl';
@@ -648,6 +657,125 @@
           if (element === 'instruction') return 'text-xs md:text-sm font-medium';
           if (element === 'input') return 'text-sm md:text-base h-8';
         }
+      };
+
+      // Smart rendering helper that supports arbitrary number of blanks in Part A
+      const renderPartAQuestion = (q) => {
+        const parts = q.text.split('__________');
+        const expectedAnswers = q.ans.split(', ');
+
+        // Single blank logic
+        if (parts.length <= 2) {
+          const isStudentCorrect = isSubmitted && (studentAnswers[q.id] || "").trim().toLowerCase() === q.ans.toLowerCase();
+          return (
+            <div>
+              <span>{parts[0]}</span>
+              {mode === 'student' ? (
+                <span className="inline-block px-1">
+                  <input
+                    type="text"
+                    value={studentAnswers[q.id] || ""}
+                    onChange={(e) => setStudentAnswers({ ...studentAnswers, [q.id]: e.target.value })}
+                    disabled={isSubmitted}
+                    className={`border-b-2 outline-none text-center font-semibold px-2 py-0.5 w-44 transition-all ${getFontSizeClass('input')} ${
+                      isSubmitted 
+                        ? isStudentCorrect 
+                          ? 'bg-emerald-50 border-emerald-500 text-emerald-700' 
+                          : 'bg-rose-50 border-rose-500 text-rose-700 font-bold'
+                        : 'border-slate-500 focus:border-indigo-600 bg-slate-50 focus:bg-white'
+                    }`}
+                  />
+                </span>
+              ) : (
+                <span className="relative inline-block border-b-2 border-slate-800 px-4 min-w-[160px] text-center">
+                  {showAnswers ? (
+                    <strong className="text-blue-700 font-bold font-serif">{q.ans}</strong>
+                  ) : (
+                    <span className="opacity-0">{q.ans || "placeholder"}</span>
+                  )}
+                </span>
+              )}
+              <span>{parts[1]}</span>
+
+              {mode === 'student' && isSubmitted && (
+                <div className="mt-1 flex flex-col gap-0.5 text-xs md:text-sm">
+                  {isStudentCorrect ? (
+                    <span className="text-emerald-600 font-medium flex items-center gap-1">✓ Correct!</span>
+                  ) : (
+                    <>
+                      <span className="text-rose-600 font-bold">✗ Incorrect. Correct answer: <span className="underline font-serif">{q.ans}</span></span>
+                      <span className="text-slate-500 italic font-normal">Hint: {q.hint}</span>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+          );
+        }
+
+        // Multiple blanks logic (e.g., Q7 with 2 blanks)
+        const isStudentCorrect = isSubmitted && expectedAnswers.every((ans, idx) => {
+          const studAns = (studentAnswers[`${q.id}_${idx}`] || "").trim().toLowerCase();
+          return studAns === ans.toLowerCase();
+        });
+
+        return (
+          <div>
+            {parts.map((part, idx) => {
+              if (idx === parts.length - 1) {
+                return <span key={idx}>{part}</span>;
+              }
+              const expectedAns = expectedAnswers[idx] || "";
+              const isIndividualCorrect = isSubmitted && (studentAnswers[`${q.id}_${idx}`] || "").trim().toLowerCase() === expectedAns.toLowerCase();
+
+              return (
+                <span key={idx}>
+                  {part}
+                  {mode === 'student' ? (
+                    <span className="inline-block px-1">
+                      <input
+                        type="text"
+                        value={studentAnswers[`${q.id}_${idx}`] || ""}
+                        onChange={(e) => setStudentAnswers({ ...studentAnswers, [`${q.id}_${idx}`]: e.target.value })}
+                        disabled={isSubmitted}
+                        className={`border-b-2 outline-none text-center font-semibold px-2 py-0.5 w-36 transition-all ${getFontSizeClass('input')} ${
+                          isSubmitted 
+                            ? isIndividualCorrect 
+                              ? 'bg-emerald-50 border-emerald-500 text-emerald-700' 
+                              : 'bg-rose-50 border-rose-500 text-rose-700 font-bold'
+                            : 'border-slate-500 focus:border-indigo-600 bg-slate-50 focus:bg-white'
+                        }`}
+                      />
+                    </span>
+                  ) : (
+                    <span className="relative inline-block border-b-2 border-slate-800 px-4 min-w-[130px] text-center">
+                      {showAnswers ? (
+                        <strong className="text-blue-700 font-bold font-serif">{expectedAns}</strong>
+                      ) : (
+                        <span className="opacity-0">{expectedAns || "placeholder"}</span>
+                      )}
+                    </span>
+                  )}
+                </span>
+              );
+            })}
+
+            {mode === 'student' && isSubmitted && (
+              <div className="mt-1 flex flex-col gap-0.5 text-xs md:text-sm">
+                {isStudentCorrect ? (
+                  <span className="text-emerald-600 font-medium flex items-center gap-1">✓ Correct!</span>
+                ) : (
+                  <>
+                    <span className="text-rose-600 font-bold">
+                      ✗ Incorrect. Correct answer: <span className="underline font-serif">{q.ans}</span>
+                    </span>
+                    <span className="text-slate-500 italic font-normal">Hint: {q.hint}</span>
+                  </>
+                )}
+              </div>
+            )}
+          </div>
+        );
       };
 
       return (
@@ -853,7 +981,7 @@
             )}
 
             {/* ====================================
-                THE EXAM PAPER PAPER CONTAINER
+                THE EXAM PAPER CONTAINER
                ==================================== */}
             <div className="bg-white shadow-md border border-slate-200 p-8 rounded-2xl print:shadow-none print:border-none print:p-0 print:bg-white">
               
@@ -911,9 +1039,6 @@
 
                 <div className="space-y-4">
                   {(isEditing ? editableData.partA.questions : examData.partA.questions).map((q, idx) => {
-                    const parts = q.text.split('__________');
-                    const isStudentCorrect = isSubmitted && (studentAnswers[q.id] || "").trim().toLowerCase() === q.ans.toLowerCase();
-                    
                     return (
                       <div key={q.id} className={`flex items-start gap-3 leading-relaxed ${getFontSizeClass('question')}`}>
                         <span className="font-bold text-slate-900 min-w-[24px] mt-0.5">{idx + 1}.</span>
@@ -951,50 +1076,7 @@
                               </div>
                             </div>
                           ) : (
-                            <div>
-                              <span>{parts[0]}</span>
-                              
-                              {mode === 'student' ? (
-                                <span className="inline-block px-1">
-                                  <input
-                                    type="text"
-                                    value={studentAnswers[q.id] || ""}
-                                    onChange={(e) => setStudentAnswers({ ...studentAnswers, [q.id]: e.target.value })}
-                                    disabled={isSubmitted}
-                                    className={`border-b-2 outline-none text-center font-semibold px-2 py-0.5 w-44 transition-all ${getFontSizeClass('input')} ${
-                                      isSubmitted 
-                                        ? isStudentCorrect 
-                                          ? 'bg-emerald-50 border-emerald-500 text-emerald-700' 
-                                          : 'bg-rose-50 border-rose-500 text-rose-700 font-bold'
-                                        : 'border-slate-500 focus:border-indigo-600 bg-slate-50 focus:bg-white'
-                                    }`}
-                                  />
-                                </span>
-                              ) : (
-                                <span className="relative inline-block border-b-2 border-slate-800 px-4 min-w-[160px] text-center">
-                                  {showAnswers ? (
-                                    <strong className="text-blue-700 font-bold font-serif">{q.ans}</strong>
-                                  ) : (
-                                    <span className="opacity-0">{q.ans || "placeholder"}</span>
-                                  )}
-                                </span>
-                              )}
-                              
-                              <span>{parts[1]}</span>
-
-                              {mode === 'student' && isSubmitted && (
-                                <div className="mt-1 flex flex-col gap-0.5 text-xs md:text-sm">
-                                  {isStudentCorrect ? (
-                                    <span className="text-emerald-600 font-medium flex items-center gap-1">✓ Correct!</span>
-                                  ) : (
-                                    <>
-                                      <span className="text-rose-600 font-bold">✗ Incorrect. Correct answer: <span className="underline font-serif">{q.ans}</span></span>
-                                      <span className="text-slate-500 italic">Hint: {q.hint}</span>
-                                    </>
-                                  )}
-                                </div>
-                              )}
-                            </div>
+                            renderPartAQuestion(q)
                           )}
                         </div>
                       </div>
@@ -1187,7 +1269,7 @@
                               value={editableData.partC.answers[`c${num}`] || ''}
                               onChange={(e) => handleEditChange('partC', null, 'answers', e.target.value, `c${num}`)}
                               className="w-24 bg-white border border-slate-300 rounded px-1.5 py-0.5"
-                            />
+                        />
                           </div>
                         ))}
                       </div>
@@ -1459,7 +1541,7 @@
                                   }`}
                                 />
                                 {isSubmitted && !isStudentCorrect && (
-                                  <span className="text-xs font-bold text-rose-600 ml-1">({examData.partE.answers[qId]})</span>
+                                  <span className="text-xs font-bold text-rose-600 ml-1">( {examData.partE.answers[qId]} )</span>
                                 )}
                               </span>
                             );
@@ -1670,3 +1752,5 @@
   </script>
 </body>
 </html>
+
+```
